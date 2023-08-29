@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.PhotoHeader{
+  width: 100%;
+  margin-bottom: 20px;
+}
+h1{
+  position: absolute; /* Posiciona el encabezado encima de la foto */
+  top: 40%; /* Lo coloca en la mitad superior del contenedor */
+  left: 50%; /* Lo coloca en el centro horizontal del contenedor */
+  transform: translate(-50%, -50%); /* Lo centra tanto horizontal como verticalmente */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer que el texto sea legible */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interior del encabezado */
+  font-size: 24px; /* Tamaño de fuente del encabezado */
+  font-weight: bold; /* Fuente en negrita */
+}
+body{
+  background-color: black;
+}
+/* Estilos para centrar y estilizar el formulario */
+form {
+  margin-top: 20px;
+  width: 300px; /* Ancho del formulario */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Añadir espacio alrededor del formulario */
+  border: 1px solid #ccc; /* Borde con color gris suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra de caja suave */
+  background-color: black;
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para los campos de entrada y etiquetas */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: block;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Estilo para los mensajes de error */
+.error {
+  color: red;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilo para un botón de Trending Topic */
+.trending-button {
+  background-color: lightgray; /* Color de fondo naranja, puedes cambiarlo */
+  color: white; /* Color del texto en blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cambiar color de fondo al pasar el mouse */
+.trending-button:hover {
+  background-color: #05a1a1; /* Cambia el color de fondo al pasar el mouse, puedes ajustarlo */
 }
